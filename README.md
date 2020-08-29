@@ -8,6 +8,8 @@ This is a json generator for hexo links page, which transforms YML to Json.
 
 Attention please! This page is only a suggestion, it should be subject to my post [Generate links json via github action](https://blog.uiharu.top/archives/generate-links-json-via-github-action.html) in the blog.
 
+请注意，本页面文档仅供参考之用，最新文档以我博客的[没人比我更懂方便——透过 Github Action 优雅生成友链数据](https://blog.uiharu.top/archives/generate-links-json-via-github-action.html)为准。
+
 ## 如何食用
 
 ### 申请 Token
