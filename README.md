@@ -6,6 +6,8 @@ This is a json generator for hexo links page, which transforms YML to Json.
 
 这是一个供 HEXO 使用的 Json 生成器，用于友链页面。其将 YML 格式文件转换为 Json 格式文件。
 
+Attention please! This page is only a suggestion, it should be subject to my post [Generate links json via github action](https://blog.uiharu.top/archives/generate-links-json-via-github-action.html) in the blog.
+
 ## 如何食用
 
 ### 申请 Token
@@ -40,7 +42,7 @@ This is a json generator for hexo links page, which transforms YML to Json.
 
 具体的 Workflow 情况请转到 Repo 的 `Action` 界面瞭解，你亦可於此处查看 Workflow 的工作情况。待 Workflow 成功运行后，你可於 Repo 的 `/links/links.json` 中查看生成结果。此时，你即可以於你的 VPS 中发现 `links.json` 文件，此即友链 `YML` 信息文件的转换结果。
 
-**注意：**该情况下具有两个 Workflow 的 `YML` 配置文件。其将先执行 `build.yml`，待其完成后，`ftp.yml` 随之执行。
+**注意：** 该情况下具有两个 Workflow 的 `YML` 配置文件。其将先执行 `build.yml`，待其完成后，`ftp.yml` 随之执行。
 
 本项目的 FTP 服务采用 [GitHub-Action/FTP-Deploy](https://github.com/marketplace/actions/ftp-deploy)，更多高级配置可参照其项目文档。
 
@@ -57,7 +59,7 @@ This is a json generator for hexo links page, which transforms YML to Json.
 
 具体的 Workflow 情况请转到 Repo 的 `Action` 界面瞭解，你亦可於此处查看 Workflow 的工作情况。待 Workflow 成功运行后，你可於 Repo 的 `/links/links.json` 中查看生成结果。此时，你即可以於你的 VPS 中发现 `links.json` 文件，此即友链 `YML` 信息文件的转换结果。
 
-**注意：**该情况下仅有一个 Workflow 的 `YML` 配置文件，`build.yml` 将会执行。
+**注意：** 该情况下仅有一个 Workflow 的 `YML` 配置文件，`build.yml` 将会执行。
 
 如你需要在本情况下访问生成的 `links.json`，你**可能**需要（三者其一）：
 - 在 Repo 中进入 `/links/links.json`，点击文件预览界面的 `RAW` 选项，获取其於 Github 上的 URL 以便引用访问（不推荐）
